@@ -1,0 +1,68 @@
+.mainDiv {
+    display: grid;
+    /* grid-template-columns: auto 1fr; */
+    grid-template-columns: auto 30fr;
+    gap: 10px;
+}
+
+.column {
+    padding: 10px;
+    /* border: 3px solid black; */
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.showModalButton {
+    font-weight: 500;
+}
+
+.showModalButton:hover {
+    transform: scale(1.2);
+}
+
+.dropdownDiv {
+    display: flex;
+}
+
+.modalTitle {
+    display: flex;
+}
+
+.modalDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(149, 146, 146, 0.7);
+    /* Arkaplanın rengi ve saydamlık seviyesi */
+    backdrop-filter: blur(1px);
+    /* Arkaplanı flu yapmak için bulanıklık değeri */
+    z-index: 999;
+    
+}
+
+.modalContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 600px;
+    height: 30vh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.modalContent h4{
+    font-size: xx-large;
+    font-weight: bolder
+}
